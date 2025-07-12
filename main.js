@@ -1,8 +1,8 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js'
 
 // ⬇️ Replace with your actual Supabase project URL and anon key
-const supabaseUrl = 'https://gqlqnigvlwubfjrrdmty.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxbHFuaWd2bHd1YmZqcnJkbXR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc0ODM1MjcsImV4cCI6MjA2MzA1OTUyN30.13_LN4SPx7VyI_4akODVHSrr6nMimvazpcU3DDdYd4w'
+const supabaseUrl = 'https://fcbddbmlopwipvrxgeta.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZjYmRkYm1sb3B3aXB2cnhnZXRhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzNDU1MjgsImV4cCI6MjA2NzkyMTUyOH0.RhoMQn60E7NGFAgm_KJW8umdn-mnQpIErylMpydeWJI'
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 const productList = document.getElementById('product-list')
