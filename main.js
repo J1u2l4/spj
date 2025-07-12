@@ -62,13 +62,6 @@ searchInput.addEventListener('input', () => {
   displayProducts(filtered)
 })
 
-// 🏷️ Category filter
-window.showCategory = (category) => {
-  const filtered = products.filter(product =>
-    product.category.toLowerCase() === category.toLowerCase()
-  )
-  displayProducts(filtered)
-}
 
 // 🚀 Start loading products
 loadProducts()
