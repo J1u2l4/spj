@@ -13,68 +13,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
-  
-  .upload-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .upload-subtitle {
-    color: #777;
-    margin-bottom: 25px;
-    font-size: 1rem;
-  }
-  
-  .upload-form {
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  .upload-form label {
-    font-weight: bold;
-    margin-top: 15px;
-    display: block;
-    font-size: 0.95rem;
-  }
-  
-  .upload-form input,
-  .upload-form select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background-color: #fafafa;
-  }
-  
-  .upload-form input[type="file"] {
-    padding: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  .upload-form button {
-    background-color: #28a745;
-    color: white;
-    padding: 14px;
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .upload-form button:hover {
-    background-color: #218838;
-  }
+
   
   .back-link {
     margin-top: 20px;
