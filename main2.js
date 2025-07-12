@@ -1,8 +1,8 @@
 // zedshop.js
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
-const SUPABASE_URL = 'https://gqlqnigvlwubfjrrdmty.supabase.co'
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxbHFuaWd2bHd1YmZqcnJkbXR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc0ODM1MjcsImV4cCI6MjA2MzA1OTUyN30.13_LN4SPx7VyI_4akODVHSrr6nMimvazpcU3DDdYd4w'
+const SUPABASE_URL = 'https://fcbddbmlopwipvrxgeta.supabase.co'
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZjYmRkYm1sb3B3aXB2cnhnZXRhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzNDU1MjgsImV4cCI6MjA2NzkyMTUyOH0.RhoMQn60E7NGFAgm_KJW8umdn-mnQpIErylMpydeWJI'
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
@@ -25,7 +25,7 @@ document.getElementById('product-form').addEventListener('submit', async (e) => 
   // Upload image to Supabase Storage
   const { data: uploadData, error: uploadError } = await supabase
     .storage
-    .from('zmarket') // bucket name
+    .from('spj') // bucket name
     .upload(fileName, imageFile)
 
   if (uploadError) {
@@ -37,7 +37,7 @@ document.getElementById('product-form').addEventListener('submit', async (e) => 
   // Get public URL
   const { data: publicUrlData } = supabase
     .storage
-    .from('zmarket')
+    .from('spj')
     .getPublicUrl(fileName)
 
   const imageUrl = publicUrlData.publicUrl
