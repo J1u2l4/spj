@@ -84,7 +84,7 @@ button:hover {
 }
 
 .product p {
-  color: #444;
+  color:"orange";
   font-size: 1.1rem;
   margin-bottom: 12px;
 }
