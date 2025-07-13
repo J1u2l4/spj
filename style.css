@@ -3,8 +3,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #000; /* Pure black background */
-  color: #fff; /* White text for high contrast */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
   line-height: 1.6;
 }
 
@@ -80,16 +80,16 @@ button:hover {
 
 /* === Individual Product Card === */
 .product {
-  background-color: #111;
+  background-color: #2a2a2a; /* Grayish card background */
   padding: 18px;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
 }
 
 .product h2 {
