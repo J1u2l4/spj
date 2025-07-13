@@ -16,7 +16,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #4b9461;
+  background-color:"blue";
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
@@ -104,6 +104,8 @@ button:hover {
 
 /* === Individual Product Card with animated background === */
 .product {
+  width:50%;
+  height:50%;
   background: linear-gradient(135deg, #444, #666, #888, #444);
   background-size: 400% 200%;
   animation: gradientShift 10s ease infinite;
