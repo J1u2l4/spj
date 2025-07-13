@@ -11,12 +11,22 @@
   }
 }
 
+/* === Keyframes for text glow === */
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+  }
+  100% {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+}
+
 /* === Global Styles === */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color:"blue";
+  background-color: #000022;
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
@@ -30,15 +40,6 @@ h1 {
   text-align: center;
   font-weight: bold;
   animation: textGlow 3s ease-in-out infinite alternate;
-}
-
-@keyframes textGlow {
-  0% {
-    text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
-  }
-  100% {
-    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
-  }
 }
 
 /* === Search Box === */
@@ -85,34 +86,41 @@ button:hover {
 /* === Product Grid === */
 #product-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
+@media (min-width: 600px) {
+  #product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (min-width: 768px) {
   #product-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (min-width: 1024px) {
   #product-list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* === Individual Product Card with animated background === */
+/* === Individual Product Card === */
 .product {
-  width:50%;
-  height:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: linear-gradient(135deg, #444, #666, #888, #444);
   background-size: 400% 200%;
   animation: gradientShift 10s ease infinite;
-  padding: 18px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 16px;
+  aspect-ratio: 1 / 1; /* ✅ Equal width & height */
+  overflow: hidden;
 }
 
 .product:hover {
@@ -120,27 +128,31 @@ button:hover {
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
 }
 
-.product h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.product p {
-  color: #ffcc00;
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
-
 .product img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
   border-radius: 10px;
   margin-top: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
-/* === Buy Button with neon shift === */
+.product h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 6px 0;
+  color: #fff;
+}
+
+.product p {
+  font-size: 0.95rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* === Buy Button === */
 .buy-btn {
   background: linear-gradient(90deg, #00c853, #00e676, #76ff03);
   background-size: 300% 300%;
@@ -172,8 +184,9 @@ button:hover {
   transition: color 0.3s ease;
 }
 
-
-
+.info-icon:hover {
+  color: #00ffff;
+}
 
 /* === Top Banner === */
 .top-banner {
@@ -185,6 +198,6 @@ button:hover {
   padding: 5px;
   background-color: #000;
   border-bottom: 1px solid #333;
-  border:2px solid black;
+  border: 2px solid black;
   box-shadow: 0 10px 8px rgba(226, 9, 255, 0.05);
 }
