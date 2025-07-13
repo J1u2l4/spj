@@ -138,16 +138,16 @@ button:hover {
 }
 
 .product h2 {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   margin: 10px 0 6px 0;
   color: #fff;
 }
 
 .product p {
-  font-size: 0.95rem;
+  font-size: 2.95rem;
   color: #ffcc00;
   margin-bottom: 10px;
-  line-height: 1.4;
+  line-height: 2.4;
 }
 
 
