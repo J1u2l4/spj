@@ -147,10 +147,9 @@ button:hover {
   font-size: 0.95rem;
   color: #ffcc00;
   margin-bottom: 10px;
-  max-height: 40px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.4;
 }
+
 
 /* === Buy Button === */
 .buy-btn {
