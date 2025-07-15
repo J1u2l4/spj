@@ -130,7 +130,7 @@ button:hover {
 
 .product img {
   width: 100%;
-  height: 150px; /* Set a fixed height */
+  height: 100%; /* Set a fixed height */
   object-fit:contain; /* Ensures it fills the box while maintaining aspect ratio */
   border-radius: 10px;
   margin-bottom: 12px;
