@@ -109,7 +109,7 @@ button:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 16px;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 320px;
 }
 
 .product:hover {
@@ -119,7 +119,7 @@ button:hover {
 
 .product img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 16;
   object-fit: cover;
   background-color: #000;
   border-radius: 10px;
