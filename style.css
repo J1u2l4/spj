@@ -131,7 +131,7 @@ button:hover {
 .product img {
   width: 100%;
   height: 120px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 10px;
   margin-top: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
