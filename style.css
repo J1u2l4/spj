@@ -109,7 +109,7 @@ button:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 16px;
   overflow: hidden;
-  min-height: 320px;
+  min-height: 400px;
 }
 
 .product:hover {
